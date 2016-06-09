@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright 2016 LasLabs Inc.
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+
+<openerp>
+    <data noupdate="1">
+    
+        <template id="products_item" inherit_id="website_sale.products_item" name="Products item display name">
+            <xpath expr="//span[@t-field='product.image']" position="attributes">
+                <attribute name="t-att-alt" t-value="product.display_name" />
+            </xpath>
+            <xpath expr="//*[@t-field='product.name']" position="attributes">
+                <attribute name="t-field" t-value="product.display_name" />
+            </xpath>
+        </template>
+    
+        <template id="product" inherit_id="website_sale.product" name="Product display name">
+            <xpath expr="//t[@t-value='product.name']" position="replace">
+                <t t-set="additional_title" t-value="product.display_name"/>
+            </xpath>
+            <xpath expr="//*[@t-field='product.name']" position="attributes">
+                <attribute name="t-field" t-value="product.display_name" />
+            </xpath>
+        </template>
+    
+    </data>
+</openerp>
