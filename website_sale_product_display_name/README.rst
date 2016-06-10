@@ -2,13 +2,11 @@
    :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
    :alt: License: AGPL-3
 
-===========================
-Website Sale Pricelist Hide
-===========================
+=================================
+Website Sale Product Display Name
+=================================
 
-This module hides items from website sale view that are not within the
-current pricelist, instead of the default behavior of showing non-discounted
-price.
+Shows Product Template display name on Website sale views, instead of name
 
 Installation
 ============
@@ -22,8 +20,7 @@ Usage
 Known Issues / Roadmap
 ======================
 
-* No tests - have to write a tour based one, it seems
-* Does not account for expired, or not yet actives pricelists
+* Add tests
 
 Bug Tracker
 ===========
