@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright 2016 LasLabs Inc.
+    License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+-->
+
+<odoo>
+
+    <template id="products_item" inherit_id="website_sale.products_item" name="Products item display name">
+        <xpath expr="//del" position="replace">
+            
+        </xpath>
+    </template>
+    
+</odoo>
