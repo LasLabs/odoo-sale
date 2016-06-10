@@ -7,8 +7,14 @@
 
 <odoo>
 
-    <template id="products_item" inherit_id="website_sale.products_item" name="Products item display name">
+    <template id="products_item" inherit_id="website_sale.products_item" name="Products item no list price">
         <xpath expr="//del" position="replace">
+            
+        </xpath>
+    </template>
+    
+    <template id="product_price" inherit_id="website_sale.product_price" name="Product price no list price">
+        <xpath expr="//span[@t-field='product.lst_price']" position="replace">
             
         </xpath>
     </template>
