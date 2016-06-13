@@ -12,11 +12,17 @@
             
         </xpath>
     </template>
-    
+
     <template id="product_price" inherit_id="website_sale.product_price" name="Product price no list price">
         <xpath expr="//span[@t-field='product.lst_price']" position="replace">
             
         </xpath>
     </template>
-    
+
+    <template id="cart_lines" inherit_id="website_sale.cart_lines" name="Cart Lines no list price">
+        <xpath expr="//del[@t-field='line.product_id.lst_price']" position="replace">
+            
+        </xpath>
+    </template>
+
 </odoo>
